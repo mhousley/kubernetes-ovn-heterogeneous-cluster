@@ -17,11 +17,11 @@ if ( Test-Path c:\ovs\ready ) {
 
    #install ovn
 
-   Start-BitsTransfer https://raw.githubusercontent.com/apprenda/kubernetes-ovn-heterogeneous-cluster/master/provisioning/gce/install_ovn.ps1
+   Start-BitsTransfer https://raw.githubusercontent.com/apprenda/kubernetes-ovn-heterogeneous-cluster/azure/provisioning/gce/install_ovn.ps1
    .\install_ovn.ps1
 
    #install kubelet
-   Start-BitsTransfer https://raw.githubusercontent.com/apprenda/kubernetes-ovn-heterogeneous-cluster/master/provisioning/gce/install_k8s.ps1
+   Start-BitsTransfer https://raw.githubusercontent.com/apprenda/kubernetes-ovn-heterogeneous-cluster/azure/provisioning/gce/install_k8s.ps1
    .\install_k8s.ps1
 
    #set marker to prevent running this on reboot

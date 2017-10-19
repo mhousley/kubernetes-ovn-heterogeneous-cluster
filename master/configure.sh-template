@@ -67,7 +67,7 @@ cp -R tmp/manifests /etc/kubernetes/
 systemctl enable kubelet
 systemctl start kubelet
 
-curl -Lskj -o /usr/bin/kubectl https://storage.googleapis.com/kubernetes-release/release/v$K8S_VERSION/bin/linux/amd64/kubectl
+curl -Lskj -o /usr/bin/kubectl https://storage.googleapis.com/apprenda-sig-windows/linux/kubectl
 chmod +x /usr/bin/kubectl
 
 kubectl config set-cluster default-cluster --server=https://$MASTER_IP --certificate-authority=/etc/kubernetes/tls/ca.pem

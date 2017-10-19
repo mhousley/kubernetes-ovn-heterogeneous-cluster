@@ -52,7 +52,7 @@ cp tmp/systemd/gateway-network-startup.service /etc/systemd/system/
 cp check-ovn-k8s-network.sh /usr/bin/
 chmod +x /usr/bin/check-ovn-k8s-network.sh
 
-curl -Lskj -o /usr/bin/kubectl https://storage.googleapis.com/kubernetes-release/release/v$K8S_VERSION/bin/linux/amd64/kubectl
+curl -Lskj -o /usr/bin/kubectl https://storage.googleapis.com/apprenda-sig-windows/linux/kubectl
 chmod +x /usr/bin/kubectl
 
 kubectl config set-cluster default-cluster --server=https://$MASTER_IP --certificate-authority=/etc/kubernetes/tls/ca.pem

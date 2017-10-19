@@ -11,12 +11,7 @@ cd $K8S_PATH
 
 
 # Download and extract Kubernetes binaries
-Start-BitsTransfer https://dl.k8s.io/v$K8S_VERSION/kubernetes-node-windows-amd64.tar.gz
-cmd /c '"C:\Program Files\7-Zip\7z.exe" e kubernetes-node-windows-amd64.tar.gz'
-cmd /c '"C:\Program Files\7-Zip\7z.exe" x kubernetes-node-windows-amd64.tar'
-mv kubernetes\node\bin\*.exe .
-Remove-Item -Recurse -Force kubernetes
-Remove-Item -Recurse -Force kubernetes-node-windows-amd64*
+Start-BitsTransfer https://storage.googleapis.com/apprenda-sig-windows/windows/kubelet.exe
 
 # TODO
 # Register kubelet as a service and start it

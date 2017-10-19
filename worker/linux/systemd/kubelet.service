@@ -3,7 +3,7 @@ Description=Kubernetes kubelet
 Documentation=https://github.com/GoogleCloudPlatform/kubernetes
 [Service]
 ExecStartPre=/bin/mkdir -p /etc/kubernetes/manifests
-ExecStartPre=/usr/bin/curl -Lskj -o /usr/local/bin/kubelet https://storage.googleapis.com/kubernetes-release/release/v__K8S_VERSION__/bin/linux/amd64/kubelet
+ExecStartPre=/usr/bin/curl -Lskj -o /usr/local/bin/kubelet https://storage.googleapis.com/apprenda-sig-windows/linux/kubelet
 ExecStartPre=/bin/chmod +x /usr/local/bin/kubelet
 ExecStart=/usr/local/bin/kubelet \
         --api-servers=https://__MASTER_IP__ \

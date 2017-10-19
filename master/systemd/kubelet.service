@@ -16,7 +16,7 @@ ExecStart=/usr/bin/docker run \
     --privileged=true \
     --name=kubelet \
     -d \
-    gcr.io/google_containers/hyperkube-amd64:v__K8S_VERSION__ \
+    bsteciuk/hyperkube-amd64:1.7-amd64 \
     /hyperkube kubelet \
         --address=__MASTER_IP__ \
         --api-servers=http://__MASTER_IP__:8080 \
