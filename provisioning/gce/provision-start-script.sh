@@ -27,7 +27,7 @@ apt install -y docker.io dkms
 cd ~
 git clone https://github.com/apprenda/kubernetes-ovn-heterogeneous-cluster
 cd kubernetes-ovn-heterogeneous-cluster/
-git checkout -b azure
+git checkout azure
 cd deb
 
 dpkg -i openvswitch-common_2.7.2-1_amd64.deb \
