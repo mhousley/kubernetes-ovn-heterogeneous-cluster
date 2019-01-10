@@ -9,7 +9,7 @@ gcloud compute instances create "sig-windows-master" \
     --machine-type "custom-2-2048" \
     --can-ip-forward \
     --tags "https-server" \
-    --image-family "ubuntu-1604-lts" \
+    --image "ubuntu-1604-xenial-v20170303" \
     --image-project "ubuntu-os-cloud" \
     --boot-disk-size "50" \
     --boot-disk-type "pd-ssd"
